@@ -1,3 +1,1 @@
-j
-size of string is :8
- value at 7th which is last :i
+bhai
