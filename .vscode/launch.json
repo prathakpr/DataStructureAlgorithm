@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/Pulkit Rathore/Desktop/practice",
-      "program": "c:/Users/Pulkit Rathore/Desktop/practice/build/Debug/outDebug",
+      "cwd": "c:/Users/Pulkit Rathore/Documents/DSA VS Code/practice",
+      "program": "c:/Users/Pulkit Rathore/Documents/DSA VS Code/practice/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
