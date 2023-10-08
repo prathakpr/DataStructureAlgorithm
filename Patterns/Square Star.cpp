@@ -1,13 +1,18 @@
 #include <iostream>
 using namespace std;
 
-int main(){
-    int i,j;
-    for(i=0; i<4; i++){
-        for(j=0; j<4; j++){
-            cout<<"*";
+void print1(int n){
+    for(int i=0; i<n; i++){
+        for(int j=0; j<n; j++){
+            cout<<'*';
         }
         cout<<"\n";
-        j=0;
     }
+}
+
+int main(){
+    int n;
+    cin>>n;
+    print1(n);
+
 }
