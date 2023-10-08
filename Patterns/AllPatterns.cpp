@@ -40,11 +40,42 @@ void print2(int n){
         cout<<"\n";
     }
 }
-    
+void print3(int n){
+
+    //triangle upper
+    for(int i=0; i<n; i++){
+        //spaces
+        for(int j=0; j<n-i-1; j++){
+            cout<<" ";
+        }
+        //stars
+        for(int j=0; j<2*i+1; j++){
+            cout<<"*";
+        }
+        //spaces
+        for(int j=0; j<n-i-1; j++){
+            cout<<" ";
+        }
+        cout<<"\n";
+    }
+    //triangle down
+    for(int i=0; i<n; i++){
+        for(int j=0; j<i; j++){
+            cout<<" ";
+        }
+        for(int j=0; j<2*(n-i)-1; j++){
+            cout<<"*";
+        }
+        for(int j=0; j<i; j++){
+            cout<<" ";
+        }
+        cout<<"\n";
+    }
+}   
     int main(){
         int n;
         cin>>n;
-        print2(n);
+        print3(n);
         
         return 0;
     }
