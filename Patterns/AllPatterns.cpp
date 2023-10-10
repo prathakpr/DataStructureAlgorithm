@@ -114,10 +114,28 @@ void print4(int n){
         cout<<"\n";
     }
 }
+void print5(int n){
+    for(int i=1; i<=2*n-1; i++ ){
+        //stars
+        int stars=i;
+        if(i>n){
+            stars=2*n-i;
+        }
+        else{
+        stars=i;
+        }
+
+        for(int j=1; j<=stars; j++){
+            cout<<"*";
+        }
+        cout<<"\n";
+    }
+}
+ 
     int main(){
         int n;
         cin>>n;
-        print4(n);
+        print5(n);
         
         return 0;
     }
