@@ -204,7 +204,7 @@ void print7_with_space(int n){
            cout<<j<<" ";
         }
         //spaces
-        for(int j=1; j<=*(n-i); j++){
+        for(int j=1; j<=4*(n-i); j++){
             cout<<" ";
         }
         //next triangle
@@ -215,13 +215,21 @@ void print7_with_space(int n){
     }
 }   
 void print8(int n){
-    
+    int value=1;
+    for(int i=1; i<=n; i++){
+        for(int j=1; j<=i; j++){
+            cout<<value<<" ";
+            value=value+1;
+        }
+        cout<<"\n";
+        
+    }
 }
 
     int main(){
         int n;
         cin>>n;
-        print7_with_space(n);
+        print8(n);
         
         return 0;
     }
