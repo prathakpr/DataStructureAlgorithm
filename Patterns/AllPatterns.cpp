@@ -152,10 +152,24 @@ void print5_with_space(int n){
             cout<<"\n";
         }
 }
+void print6(int n){
+    for(int i=1; i<=n; i++){
+        int value;
+        if (i%2==0) value=0;
+        else value=1;
+
+        for(int j=1; j<=i; j++){
+            cout<<value;
+            value=1-value;
+        }
+        cout<<"\n";
+    }
+}
+    
     int main(){
         int n;
         cin>>n;
-        print5_with_space(n);
+        print6(n);
         
         return 0;
     }
