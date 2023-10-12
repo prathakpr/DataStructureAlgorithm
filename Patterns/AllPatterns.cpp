@@ -244,11 +244,20 @@ void print10(int n){
         cout<<"\n";
     }
 }
-
+void print11(int n){
+    char abc='A';
+    for(int i=0; i<n; i++){
+        for(int j=0; j<=i; j++){
+            cout<<abc;
+        }
+        cout<<"\n";
+        abc++;
+    }
+}
     int main(){
         int n;
         cin>>n;
-        print10(n);
+        print11(n);
         
         return 0;
     }
