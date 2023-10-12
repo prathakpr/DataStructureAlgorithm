@@ -254,10 +254,25 @@ void print11(int n){
         abc++;
     }
 }
+void print12(int n){
+        for(int i=0; i<n; i++){
+            char abc='A';
+            int halfside=2*(i-1)/2;
+        for(int j=0; j<=n-i; j++){
+                cout<<" ";
+            }
+        for(int j=0; j<=2*i; j++){
+            if(j<=halfside) cout<<abc++;
+            else cout<<abc--;
+            }
+            cout<<"\n";
+        }
+}   
+   
     int main(){
         int n;
         cin>>n;
-        print11(n);
+        print12(n);
         
         return 0;
     }
