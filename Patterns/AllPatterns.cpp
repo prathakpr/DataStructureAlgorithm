@@ -180,10 +180,28 @@ void print6_with_spaces(int n){
         cout<<"\n";
     }
 }
+void print7(int n){
+    for(int i=1; i<=n; i++){
+        //fist right triangle
+        for(int j=1; j<=i; j++){
+            cout<<j;
+        }
+        //second space triangle
+        for(int j=1; j<=2*(n-i); j++){
+            cout<<" ";
+        }
+        //print number
+        for(int j=1; j<=i; j++){
+             cout<<i-j+1;
+        }
+        cout<<"\n";
+    }
+    }    
+    
     int main(){
         int n;
         cin>>n;
-        print6_with_spaces(n);
+        print7(n);
         
         return 0;
     }
