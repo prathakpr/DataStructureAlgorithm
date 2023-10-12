@@ -165,11 +165,25 @@ void print6(int n){
         cout<<"\n";
     }
 }
-    
+void print6_with_spaces(int n){
+    for(int i=1; i<=n; i++){
+        int value;
+        if(i%2==0) value=0;
+        else value=1;
+        for(int j=1; j<=2*i; j++){
+            if(j%2==0){
+                cout<<" ";
+                value=1-value;
+            }
+            else cout<<value;
+        }
+        cout<<"\n";
+    }
+}
     int main(){
         int n;
         cin>>n;
-        print6(n);
+        print6_with_spaces(n);
         
         return 0;
     }
