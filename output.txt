@@ -1,5 +1,6 @@
-A
-AB
-ABC
-ABCD
 ABCDE
+ABCD
+ABC
+AB
+A
+

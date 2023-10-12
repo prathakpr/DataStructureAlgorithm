@@ -235,11 +235,20 @@ void print9(int n){
     }
 
 }
+void print10(int n){
+    for(int i=0; i<=n; i++){
+        char abc='A';
+        for(int j=0; j<=n-i-1; j++){
+            cout<<abc++;
+        }
+        cout<<"\n";
+    }
+}
 
     int main(){
         int n;
         cin>>n;
-        print9(n);
+        print10(n);
         
         return 0;
     }
