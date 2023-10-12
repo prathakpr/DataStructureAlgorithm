@@ -197,11 +197,27 @@ void print7(int n){
         cout<<"\n";
     }
     }    
-    
+void print7_with_space(int n){
+    for(int i=1; i<=n; i++){
+        //tringle 1
+        for(int j=1; j<=i; j++){
+           cout<<j<<" ";
+        }
+        //spaces
+        for(int j=1; j<=4*(n-i); j++){
+            cout<<" ";
+        }
+        //next triangle
+        for(int j=1; j<=i; j++){
+            cout<<i-j+1<<" ";
+        }
+        cout<<"\n";
+    }
+}   
     int main(){
         int n;
         cin>>n;
-        print7(n);
+        print7_with_space(n);
         
         return 0;
     }
