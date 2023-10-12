@@ -225,11 +225,21 @@ void print8(int n){
         
     }
 }
+void print9(int n){
+    for(int i=1; i<=n; i++){
+        char abc='A';
+        for(int j=1; j<=i; j++){
+            cout<<abc++;
+        }
+        cout<<"\n";
+    }
+
+}
 
     int main(){
         int n;
         cin>>n;
-        print8(n);
+        print9(n);
         
         return 0;
     }
