@@ -321,10 +321,44 @@ void print15(int n){
         cout<<"\n";
     }
 }
+void print16(int n){
+    for(int i=0; i<n-1; i++){
+        //stars
+        for(int j=0; j<=i; j++){
+            cout<<"*";
+        }
+        //spaces
+        for(int j=0; j<2*(n-i-2); j++){
+            cout<<" ";
+        }
+        //stars
+        for(int j=0; j<=i; j++){
+            cout<<"*";
+        }
+        cout<<"\n";
+    }
+         //second
+    for(int i=0; i<n; i++){
+        //stars
+        for(int j=0; j<n-i-2; j++){
+            cout<<"*";
+        }
+        //spaces
+        for(int j=0; j<=2*i+1; j++){
+            cout<<" ";
+        }
+        //stars
+        for(int j=0; j<n-i-2; j++){
+            cout<<"*";
+        }
+        cout<<"\n";
+    }
+}   
+    
     int main(){
         int n;
         cin>>n;
-        print15(n);
+        print16(n);
         
         return 0;
     }
