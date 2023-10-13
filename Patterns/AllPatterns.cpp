@@ -279,10 +279,20 @@ void print13(int n){
         abc=abc-1;
     }
 }   
+void print14(int n){
+    for(int i=0; i<n; i++){
+        char abc='A'-1+n-i;
+        for(int j=0; j<=i; j++){
+            cout<<abc++;
+        }
+        cout<<"\n";
+    }
+}
+
     int main(){
         int n;
         cin>>n;
-        print13(n);
+        print14(n);
         
         return 0;
     }
