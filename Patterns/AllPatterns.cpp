@@ -288,11 +288,43 @@ void print14(int n){
         cout<<"\n";
     }
 }
-
+void print15(int n){
+    for(int i=0; i<n; i++){
+        //satrs
+        for(int j=0; j<n-i; j++){
+            cout<<"*";
+        }
+        //spaces
+        for(int j=0; j<2*i; j++){
+            cout<<" ";
+        }
+        //stars
+        for(int j=0; j<n-i; j++){
+            cout<<"*";
+        }
+        cout<<"\n";
+    }
+    //2nd triangle
+    for(int i=0; i<n; i++){
+        //stars
+        for(int j=0; j<=i; j++){
+            cout<<"*";
+        }
+        //spaces
+        for(int j=0; j<2*(n-i-1); j++){
+            cout<<" ";
+        }
+        //stars
+        for(int j=0; j<=i; j++){
+            cout<<"*";
+        }
+        cout<<"\n";
+    }
+}
     int main(){
         int n;
         cin>>n;
-        print14(n);
+        print15(n);
         
         return 0;
     }
