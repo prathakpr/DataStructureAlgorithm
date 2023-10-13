@@ -354,11 +354,33 @@ void print16(int n){
         cout<<"\n";
     }
 }   
-    
+void print17(int n){
+    for(int i=0; i<2*n-1; i++){
+        int stars, space;
+        if(i<n) {
+            stars=i;
+            space=2*(n-i-1);
+        }
+        else {
+            stars=2*n-i-2;
+            space=2*(i-n+1);
+        }
+        for(int j=0; j<=stars; j++){
+            cout<<"*";
+        }
+        for(int j=0; j<=space; j++){
+            cout<<" ";
+        }
+        for(int j=0; j<=stars; j++){
+            cout<<"*";
+        }
+        cout<<"\n";
+    }
+}    
     int main(){
         int n;
         cin>>n;
-        print16(n);
+        print17(n);
         
         return 0;
     }
