@@ -269,11 +269,11 @@ void print12(int n){
         }
 }   
 void print13(int n){
-    char abc='A'-1+n;
+    
     for(int i=0; i<n; i++){
-        
+        char abc='A'-1+n;
         for(int j=0; j<=i; j++){
-            cout<<abc;
+            cout<<abc--;
         }
         cout<<"\n";
         abc=abc-1;
