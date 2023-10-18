@@ -63,9 +63,13 @@ void armstrongall(int n){
     else cout<<sum<<"\n no it is not armstrong";
 
 }
-
+void alldivisor(int n){
+    for(int i=1; i<=n; i++){
+        if(n%i==0) cout<<i<<"\n";
+    }
+}
 int main(){
     int n;
     cin>>n;
-    armstrongall(n);
+    alldivisor(n);
 }
