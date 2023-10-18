@@ -1,13 +1,20 @@
-#include <iostream>
+#include <bits/stdc++.h>
 using namespace std;
 
-int main(){
+void count1(int n){
     int cnt=0;
-    int n;
-    cin>>n;
     while(n>0){
         cnt=cnt+1;
         n=n/10;
     }
     cout<<cnt;
+}
+void count2(int n){
+    int cnt=(int)log10(n)+1;
+    cout<<cnt;
+}
+int main(){
+    int n;
+    cin>>n;
+    count1(n);
 }
