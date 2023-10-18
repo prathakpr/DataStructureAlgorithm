@@ -36,9 +36,21 @@ void palindrome(int n){
     if(revn==org) cout<<"yes it is palindrome";
     else cout<<"no it is not palindrome";
 }
-
+void armstrong(int n){
+    int sum=0;
+    int org=n;
+    int ld;
+    while(n>0){
+        ld=n%10;
+        n=n/10;
+        sum=sum+(ld*ld*ld);
+    }
+    cout<<sum<<" \n";
+    if(sum==org) cout<<"yes it is armstrong no.";
+    else cout<<"no it is not armstrong no.";
+}
 int main(){
     int n;
     cin>>n;
-    palindrome(n);
+    armstrong(n);
 }

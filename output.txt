@@ -1,2 +1,2 @@
-6532
-no it is not palindrome
+370 
+yes it is armstrong no.
