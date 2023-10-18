@@ -23,10 +23,22 @@ void reverse(int n){
     }
     cout<<revn;
 }
-
+void palindrome(int n){
+    int revn=0;
+    int org=n;
+    int lastdigit;
+    while(n>0){
+        lastdigit=n%10;
+        n=n/10;
+        revn=revn*10+lastdigit;
+    }
+    cout<<revn<<"\n";
+    if(revn==org) cout<<"yes it is palindrome";
+    else cout<<"no it is not palindrome";
+}
 
 int main(){
     int n;
     cin>>n;
-    reverse(n);
+    palindrome(n);
 }
