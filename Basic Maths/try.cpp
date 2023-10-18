@@ -49,8 +49,23 @@ void armstrong(int n){
     if(sum==org) cout<<"yes it is armstrong no.";
     else cout<<"no it is not armstrong no.";
 }
+void armstrongall(int n){
+    int cnt=(int)log10(n)+1;
+    int org=n;
+    int sum=0;
+    int ld;
+    while(n>0){
+        ld=n%10;
+        n=n/10;
+        sum=sum+pow(ld,cnt);
+    }
+    if(sum==org) cout<<sum<<"\n yes it is armstrong";
+    else cout<<sum<<"\n no it is not armstrong";
+
+}
+
 int main(){
     int n;
     cin>>n;
-    armstrong(n);
+    armstrongall(n);
 }
