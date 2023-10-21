@@ -79,7 +79,8 @@ void alldivisor_lessTC (int n){
 }
 void alldivisor_lessTC_Sorted(int n){
     vector <int> ls;
-    for(int i=1; i<=sqrt(n); i++){
+    // can also do sqrt but it is mathematical function and it will call again and agai so.
+    for(int i=1; i*i<=(n); i++){
         if(n%i==0){
             ls.emplace_back(i);
             if(n/i !=i) ls.emplace_back(n/i);
