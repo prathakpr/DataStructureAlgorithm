@@ -68,8 +68,19 @@ void alldivisor(int n){
         if(n%i==0) cout<<i<<"\n";
     }
 }
+void alldivisor_lessTC (int n){
+    for(int i=1; i<=sqrt(n); i++ ){
+        if(n%i==0){
+            cout<<i<<"\n";
+            if((n/i) !=i) cout<<n/i<<"\n";
+        }
+    }
+
+}
+
+
 int main(){
     int n;
     cin>>n;
-    alldivisor(n);
+    alldivisor_lessTC(n);
 }
