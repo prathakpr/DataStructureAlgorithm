@@ -89,9 +89,19 @@ void alldivisor_lessTC_Sorted(int n){
     sort(ls.begin() , ls.end());
     for(auto it:ls) cout<<it<<" ";
 }
-
+void CheckPrime(int n){
+    int cnt=0;
+    for(int i=1; i*i<=n; i++){
+        if(n%i==0){
+            cnt++;
+            if(n/i!=i) cnt++;
+        }
+    }
+    if (cnt==2) cout<<"yes it is prime";
+    else cout<<" naa re, not prime";
+}
 int main(){
     int n;
     cin>>n;
-    alldivisor_lessTC_Sorted(n);
+    CheckPrime(n);
 }
