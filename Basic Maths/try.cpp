@@ -100,8 +100,25 @@ void CheckPrime(int n){
     if (cnt==2) cout<<"yes it is prime";
     else cout<<" naa re, not prime";
 }
+void gcd(int n1, int n2){
+    for(int i=min(n1,n2); i>=1; i--){
+        if(n1%i==0 && n2%i==0){
+            cout<<i;
+            break;
+        }
+    }
+}
+int main2(){
+    int n1,n2;
+    cin>>n1;
+    cout<<"other"<<"\n";
+    cin>>n2;
+    gcd(n1,n2);
+}
+
 int main(){
-    int n;
-    cin>>n;
-    CheckPrime(n);
+    //int n;
+   // cin>>n;
+    //CheckPrime(n);
+    main2();
 }
