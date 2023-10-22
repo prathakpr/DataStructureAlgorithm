@@ -1,6 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
-int Gnt=0;
+
 void count1(int n){
     int cnt=0;
     while(n>0){
@@ -116,14 +116,6 @@ void gcd_Euclidean(int n1, int n2){
     if(n1==0) cout<<n2;
     else cout<<n1;
 }
-void SimpleRecursion(){
-    if(Gnt<=5) {
-        cout<<"Recursion"<<Gnt<<"\n";
-        Gnt++;
-    }
-    else return;
-    SimpleRecursion();
-}
 
 int main2(){
     int n1,n2;
@@ -137,5 +129,5 @@ int main(){
     //int n;
    // cin>>n;
     //CheckPrime(n);
-    SimpleRecursion();
+    main2();
 }
