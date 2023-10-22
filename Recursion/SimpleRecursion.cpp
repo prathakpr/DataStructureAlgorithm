@@ -27,10 +27,14 @@ void BackTruckCount(int i, int n){
     BackTruckCount(i-1,n);
     cout<<i<<"\n";
 }
-
+void BackTruckReCount(int i, int n){
+    if(i>n) return;
+    BackTruckReCount(i+1,n);
+    cout<<i<<"\n";
+}
 
 int main(){
     int n;
     cin>>n;
-    BackTruckCount(n,n);
+    BackTruckReCount(1,n);
 }
