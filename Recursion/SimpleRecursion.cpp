@@ -16,9 +16,14 @@ void PrintName(int i,int n){
     cout<<"Raj\n";
     PrintName(i+1,n);
 }
+void reverseprint(int i, int n){
+    if(i<=0) return;
+    cout<<i<<"\n";
+    reverseprint(i-1,n);
 
+}
 int main(){
     int n;
     cin>>n;
-    PrintName(1,n);
+    reverseprint(n,n);
 }
