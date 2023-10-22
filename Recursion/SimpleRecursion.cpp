@@ -11,7 +11,14 @@ void SimpleRecursion(){
     else return;
     SimpleRecursion();
 }
+void PrintName(int i,int n){
+    if(i>n) return;
+    cout<<"Raj\n";
+    PrintName(i+1,n);
+}
 
 int main(){
-    SimpleRecursion();
+    int n;
+    cin>>n;
+    PrintName(1,n);
 }
