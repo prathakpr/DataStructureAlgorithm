@@ -54,6 +54,11 @@ void ReverseofArray(int n,int a[],int u, int v){
     swap(a[u],a[v]);
     ReverseofArray(n,a,u+1,v-1);
 }
+void SingleVariableReverseArray(int n, int a[], int i){
+    if(i>=n/2) return;
+    swap(a[i],a[n-i-1]);
+    SingleVariableReverseArray(n,a,i+1);
+}
 
 
 int main(){
@@ -63,7 +68,7 @@ int main(){
     for(int i=0;i<n;i++){
         cin>>a[i];
     }
-    ReverseofArray(n,a,0,n-1);
+    SingleVariableReverseArray(n,a,0);
     for(int i=0;i<n;i++){
         cout<<a[i]<<" ";
     }
