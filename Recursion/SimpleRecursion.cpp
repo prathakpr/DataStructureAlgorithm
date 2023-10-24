@@ -39,10 +39,15 @@ void SumofNum(int i, int sum){
     }
     SumofNum(i-1,sum+i);
 }
-
+int functionalWay(int n){
+    if(n==0){
+        return 0;
+    }
+    return n + functionalWay(n-1);
+}
 
 int main(){
     int n;
     cin>>n;
-    SumofNum(n,0);
+    cout<<functionalWay(n);
 }
