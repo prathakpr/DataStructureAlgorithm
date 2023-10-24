@@ -33,7 +33,7 @@ void BackTruckReCount(int i, int n){
     cout<<i<<"\n";
 }
 void SumofNum(int i, int sum){
-    if(i<0){
+    if(i<1){
         cout<<sum;
         return;
     }
