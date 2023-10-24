@@ -49,9 +49,22 @@ int FactorialFunctionalWay(int n){
     if(n==0) return 1;
     return n * FactorialFunctionalWay(n-1);
 }
+void ReverseofArray(int n,int a[],int u, int v){
+    if(u>=v) return;
+    swap(a[u],a[v]);
+    ReverseofArray(n,a,u+1,v-1);
+}
+
 
 int main(){
     int n;
     cin>>n;
-    cout<<FactorialFunctionalWay(n);
+    int a[n];
+    for(int i=0;i<n;i++){
+        cin>>a[i];
+    }
+    ReverseofArray(n,a,0,n-1);
+    for(int i=0;i<n;i++){
+        cout<<a[i]<<" ";
+    }
 }
