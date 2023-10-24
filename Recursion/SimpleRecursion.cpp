@@ -32,9 +32,17 @@ void BackTruckReCount(int i, int n){
     BackTruckReCount(i+1,n);
     cout<<i<<"\n";
 }
+void SumofNum(int i, int sum){
+    if(i<0){
+        cout<<sum;
+        return;
+    }
+    SumofNum(i-1,sum+i);
+}
+
 
 int main(){
     int n;
     cin>>n;
-    BackTruckReCount(1,n);
+    SumofNum(n,0);
 }
