@@ -59,9 +59,13 @@ void SingleVariableReverseArray(int n, int a[], int i){
     swap(a[i],a[n-i-1]);
     SingleVariableReverseArray(n,a,i+1);
 }
+bool f(int i, string s){
+    if(i>=s.size()/2) return true;
+    if(s[i]!=s[s.size()-i-1]) return false;
+    return f(i+1,s);
+}
 
-
-int main(){
+int main2(){
     int n;
     cin>>n;
     int a[n];
@@ -72,4 +76,10 @@ int main(){
     for(int i=0;i<n;i++){
         cout<<a[i]<<" ";
     }
+}
+
+int main(){
+    string s="MADAM";
+    cout<<f(0,s);
+
 }
