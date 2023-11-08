@@ -17,9 +17,7 @@ int main(){
         }
 
         //swaping
-        int temp=arr[mini];
-        arr[mini]=arr[i];
-        arr[i]=temp;
+        swap(arr[mini],arr[i]);
     }
 
     //printing

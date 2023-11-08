@@ -15,6 +15,9 @@ int main(){
            if(arr[j]<arr[mini]) mini=j;
         }
 
+        //we can direct swap by using
+        //  swap(arr[mini],arr[i]);
+        
         int temp=arr[mini];
         arr[mini]=arr[i];
         arr[i]=temp;
