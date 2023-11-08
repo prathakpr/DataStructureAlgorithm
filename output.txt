@@ -1,2 +1,8 @@
-series upto :6
-0,1,1,2,3,5
+given array is: 12132
+ocurance of: 
+5=0,
+4=0,
+3=1,
+2=2,
+1=2,
+0=0,
