@@ -1,19 +1,29 @@
-#include <iostream>
-#include <vector>
+#include <bits\stdc++.h>
 using namespace std;
 
 int main(){
+    //selection sort
     int n;
     cin>>n;
-    int a=0, b=1;
-    if(n>=1) cout<<a;
-    if(n>=2) cout<<","<<b;
-    for(int i=3; i<=n; i++){
-        int next=a+b;
-        cout<<","<<next;
-        a=b;
-        b=next;
-       
+    int arr[n];
+    for(int i=0; i<n;i++){
+        cin>>arr[i];
     }
-    cout<<"\n";
+    //sorting here
+    for(int i=0;i<n-1;i++){
+       int mini=i;
+        for(int j=i+1;j<=n-1;j++){
+            if(arr[j]<arr[mini]) mini=j;
+        }
+
+        //swaping
+        int temp=arr[mini];
+        arr[mini]=arr[i];
+        arr[i]=temp;
+    }
+
+    //printing
+    for(int i=0;i<n;i++){
+        cout<<arr[i]<<",";
+    }
 }
