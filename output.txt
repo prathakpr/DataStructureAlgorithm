@@ -1,2 +1,2 @@
-given string :abcdefcccggfd
-1,4,2,2,2,
+
+a=1,c=4,g=2,f=2,d=2,H=2,A=1,
