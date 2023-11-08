@@ -15,6 +15,7 @@ int main(){
     while(q--){
         char c;
         cin>>c;
-        cout<<c<<"="<<hash[c]<<",";
+        cout<<c<<"="<<
+        hash[c]<<",";
     }
 }
