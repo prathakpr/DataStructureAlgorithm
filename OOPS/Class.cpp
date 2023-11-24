@@ -2,11 +2,14 @@
 using namespace std;
 
 class hero {
-    int health=1;
+    public:
+    int health=100;
 };
 
 int main(){
     //cration of object
-    hero health;
-    cout<<sizeof(health);
+    hero obj1;
+    cout<<sizeof(obj1)<<endl;
+    cout<< obj1.health;
+
 }
