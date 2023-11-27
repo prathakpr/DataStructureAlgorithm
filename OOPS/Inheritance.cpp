@@ -19,8 +19,8 @@ class female : protected Human{
         return this -> bones;
     }
     public:
-    void operator() () {
-        cout<<"mai plus hoon";
+    void operator+ (male &obj) {
+        cout<<"mai plus hoon asli";
     }
 };
 
@@ -29,4 +29,5 @@ int main(){
     female h2;
     cout<< h1.name <<endl<<h1.age<<endl<<endl;
     cout<<h2.name<<endl<<h2.getbones();
-    h2() ;
+    h2+ h1  ;
+}
