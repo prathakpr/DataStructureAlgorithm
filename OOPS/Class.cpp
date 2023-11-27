@@ -26,9 +26,11 @@ class hero {
 int main(){
     //cration of object
     hero obj1;
+    int arr[10];
     cout<<sizeof(obj1)<<endl;
     cout<< obj1.getHealth();
     obj1.setName("Ramesh");
-    cout<<endl<<obj1.getName();
+    cout<<endl<<obj1.getName()<<endl;
+    cout<<"array adress"<<arr;
 
 }
