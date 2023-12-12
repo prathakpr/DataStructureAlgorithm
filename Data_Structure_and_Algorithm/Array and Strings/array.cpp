@@ -1,4 +1,5 @@
 #include <iostream>
+#include <vector>
 using namespace std;
 
 int print_array(int arr[], int size){
@@ -15,4 +16,9 @@ int main(){
 
     int x[5]={1,5,6,6,8};
     print_array(x,5);
+
+    vector<int> rajesh;
+
+    cout<<endl<<rajesh.size();
+    cout<<endl<<sizeof(raju)/sizeof(raju[0]);
 }
