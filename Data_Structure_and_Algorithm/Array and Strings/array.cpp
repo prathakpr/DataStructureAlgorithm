@@ -1,8 +1,18 @@
 #include <iostream>
 using namespace std;
 
+int print_array(int arr[], int size){
+    cout<<"Printed elements of the array are = ";
+    for(int i=0; i<size; i++){
+        cout<<arr[i]<<" ";
+    }
+    cout<<endl;
+}
+
 int main(){
-    int raju[6];
-    cin>>raju[1]>>raju[2];
-    cout<<raju[1]<<"\n"<<raju[2]<<"\n"<<raju[3]<<"\n where third one is garbage value";
+    int raju[15]={1,2};
+    print_array(raju,15);
+
+    int x[5]={1,5,6,6,8};
+    print_array(x,5);
 }

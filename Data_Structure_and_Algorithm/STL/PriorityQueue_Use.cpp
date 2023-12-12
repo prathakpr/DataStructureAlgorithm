@@ -27,5 +27,7 @@ int main(){
         cout<<min.top()<<" ";
         min.pop();
     }
+    
+    
 
 }
