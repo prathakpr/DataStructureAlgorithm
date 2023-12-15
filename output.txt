@@ -1,1 +1,1 @@
-2
+pivot point of the rotated array is 0

@@ -1,9 +1,10 @@
   #include <iostream>
+  #include<vector>
   using namespace std;
+  
   
   int main(){
 
-    
     int s=0;
     int e=6;
     int key=7;
