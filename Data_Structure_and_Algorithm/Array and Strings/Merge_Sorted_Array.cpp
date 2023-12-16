@@ -11,7 +11,7 @@ int main(){
     int new_arr[size1+size2];
     for(int i=0; i<size1+size2;i++){
         if(i<size1) new_arr[i]=arr1[i];
-        else new_arr[i]=arr2[size2-1-i];
+        else new_arr[i]=arr2[i-size2+1];
     }
 
     for(int i=0; i<size1+size2;i++){
