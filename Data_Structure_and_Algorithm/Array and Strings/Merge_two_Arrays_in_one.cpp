@@ -2,7 +2,7 @@
 using namespace std;
 
 int main(){
-    int arr1[5]={1,2,3,4,5};
+    int arr1[5]={12,2,3,4,5};
     int arr2[6]={5,6,7,8,9,10};
 
     int size1= sizeof(arr1)/sizeof(arr1[0]);
