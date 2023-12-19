@@ -1,2 +1,1 @@
-7
-1 2 5 8 12 9 1
+my name is pulkit
