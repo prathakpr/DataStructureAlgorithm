@@ -39,6 +39,8 @@ int main(){
     node* tail=node1;
     insertAtTail(tail,12);
     print (head);
+    
+    cout<< tail->data;
     return 0;
 }
 
