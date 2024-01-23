@@ -1,1 +1,26 @@
-4
+enter mid data
+enter data left
+enter mid data
+enter data left
+enter mid data
+enter data left
+enter mid data
+enter data right
+enter mid data
+enter data right
+enter mid data
+enter data left
+enter mid data
+enter data right
+enter mid data
+enter data right
+enter mid data
+enter data left
+enter mid data
+enter data left
+enter mid data
+enter data right
+enter mid data
+enter data right
+enter mid data
+0xf47a38
