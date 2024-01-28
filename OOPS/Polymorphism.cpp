@@ -12,8 +12,8 @@ class function_overloading{
 };
 
 class operator_overloading{
-    
-}
+
+};
 
 int main(){
     function_overloading obj;
